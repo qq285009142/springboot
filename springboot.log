@@ -1,0 +1,109 @@
+2019-07-19 11:13:40.427  INFO 16196 --- [main] com.deng.SpringbootApplicationTests      : Starting SpringbootApplicationTests on deng with PID 16196 (started by Administrator in D:\IdeaProjects\springboot)
+2019-07-19 11:13:40.428  INFO 16196 --- [main] com.deng.SpringbootApplicationTests      : No active profile set, falling back to default profiles: default
+2019-07-19 11:13:40.674  INFO 16196 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1abf3bf: startup date [Fri Jul 19 11:13:40 CST 2019]; root of context hierarchy
+2019-07-19 11:13:42.038  INFO 16196 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1e2dd0e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-19 11:13:42.781  INFO 16196 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-07-19 11:13:42.798  INFO 16196 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-19 11:13:42.918  INFO 16196 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-07-19 11:13:42.919  INFO 16196 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-19 11:13:42.920  INFO 16196 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-07-19 11:13:42.961  INFO 16196 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-07-19 11:13:43.088  INFO 16196 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-07-19 11:13:43.651  INFO 16196 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-19 11:13:44.281  INFO 16196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/user],methods=[DELETE]}" onto public boolean com.deng.web.UserRestController.delete(int)
+2019-07-19 11:13:44.282  INFO 16196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/login],methods=[POST]}" onto public boolean com.deng.web.UserRestController.login(java.lang.String,java.lang.String)
+2019-07-19 11:13:44.282  INFO 16196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/user],methods=[POST]}" onto public boolean com.deng.web.UserRestController.addUser(com.deng.bean.User)
+2019-07-19 11:13:44.282  INFO 16196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/user],methods=[PUT]}" onto public boolean com.deng.web.UserRestController.updateUser(com.deng.bean.User)
+2019-07-19 11:13:44.282  INFO 16196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/user],methods=[GET]}" onto public com.deng.bean.User com.deng.web.UserRestController.findByUserName(java.lang.String)
+2019-07-19 11:13:44.283  INFO 16196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/user/userAll],methods=[GET]}" onto public java.util.List<com.deng.bean.User> com.deng.web.UserRestController.findByUserAge()
+2019-07-19 11:13:44.283  INFO 16196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2019-07-19 11:13:44.285  INFO 16196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-07-19 11:13:44.286  INFO 16196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-07-19 11:13:44.287  INFO 16196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-07-19 11:13:44.292  INFO 16196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-19 11:13:44.293  INFO 16196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-19 11:13:44.857  INFO 16196 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1abf3bf: startup date [Fri Jul 19 11:13:40 CST 2019]; root of context hierarchy
+2019-07-19 11:13:44.916  INFO 16196 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-19 11:13:44.916  INFO 16196 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-19 11:13:44.957  INFO 16196 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-19 11:13:44.992  WARN 16196 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-07-19 11:13:45.673  INFO 16196 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-07-19 11:13:45.693  INFO 16196 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2019-07-19 11:13:45.699  INFO 16196 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-07-19 11:13:45.702  INFO 16196 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was userservice|一个用来测试的控制器
+2019-07-19 11:13:45.705  INFO 16196 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: login belongs to groups: [[ResourceGroup{groupName='userservice|一个用来测试的控制器', position=0, controller=com.deng.web.UserRestController}]] 
+2019-07-19 11:13:45.705  INFO 16196 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method findByUserAge was userservice|一个用来测试的控制器
+2019-07-19 11:13:45.705  INFO 16196 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: findByUserAge belongs to groups: [[ResourceGroup{groupName='userservice|一个用来测试的控制器', position=0, controller=com.deng.web.UserRestController}]] 
+2019-07-19 11:13:45.706  INFO 16196 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was userservice|一个用来测试的控制器
+2019-07-19 11:13:45.706  INFO 16196 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: delete belongs to groups: [[ResourceGroup{groupName='userservice|一个用来测试的控制器', position=0, controller=com.deng.web.UserRestController}]] 
+2019-07-19 11:13:45.706  INFO 16196 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was userservice|一个用来测试的控制器
+2019-07-19 11:13:45.706  INFO 16196 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: addUser belongs to groups: [[ResourceGroup{groupName='userservice|一个用来测试的控制器', position=0, controller=com.deng.web.UserRestController}]] 
+2019-07-19 11:13:45.706  INFO 16196 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateUser was userservice|一个用来测试的控制器
+2019-07-19 11:13:45.706  INFO 16196 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: updateUser belongs to groups: [[ResourceGroup{groupName='userservice|一个用来测试的控制器', position=0, controller=com.deng.web.UserRestController}]] 
+2019-07-19 11:13:45.707  INFO 16196 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method findByUserName was userservice|一个用来测试的控制器
+2019-07-19 11:13:45.707  INFO 16196 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: findByUserName belongs to groups: [[ResourceGroup{groupName='userservice|一个用来测试的控制器', position=0, controller=com.deng.web.UserRestController}]] 
+2019-07-19 11:13:45.709  INFO 16196 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/userservice|一个用来测试的控制器 Description: userservice|一个用来测试的控制器 Position: 0
+2019-07-19 11:13:45.727  INFO 16196 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: boolean(true)
+2019-07-19 11:13:45.727  INFO 16196 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key boolean(true)
+2019-07-19 11:13:45.741  INFO 16196 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: boolean(true)
+2019-07-19 11:13:45.741  INFO 16196 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key boolean(true)
+2019-07-19 11:13:45.748  INFO 16196 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/user/user.com.deng.web.UserRestController.addUser.DefaultGenericTypeNamingStrategy
+2019-07-19 11:13:45.748  INFO 16196 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/user/user.com.deng.web.UserRestController.addUser.DefaultGenericTypeNamingStrategy
+2019-07-19 11:13:45.763  INFO 16196 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was userservice|一个用来测试的控制器
+2019-07-19 11:13:45.766  INFO 16196 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was userservice|一个用来测试的控制器
+2019-07-19 11:13:45.770  INFO 16196 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: boolean(true)
+2019-07-19 11:13:45.770  INFO 16196 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key boolean(true)
+2019-07-19 11:13:45.770  INFO 16196 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: boolean(true)
+2019-07-19 11:13:45.770  INFO 16196 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key boolean(true)
+2019-07-19 11:13:45.771  INFO 16196 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/user/user.com.deng.web.UserRestController.delete.DefaultGenericTypeNamingStrategy
+2019-07-19 11:13:45.771  INFO 16196 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/user/user.com.deng.web.UserRestController.delete.DefaultGenericTypeNamingStrategy
+2019-07-19 11:13:45.774  INFO 16196 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was userservice|一个用来测试的控制器
+2019-07-19 11:13:45.774  INFO 16196 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method delete was userservice|一个用来测试的控制器
+2019-07-19 11:13:45.775  INFO 16196 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<com.deng.bean.User>(true)
+2019-07-19 11:13:45.775  INFO 16196 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.List<com.deng.bean.User>(true)
+2019-07-19 11:13:45.776  INFO 16196 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<com.deng.bean.User>(true)
+2019-07-19 11:13:45.776  INFO 16196 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.List<com.deng.bean.User>(true)
+2019-07-19 11:13:45.777  INFO 16196 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.deng.bean.User(true)
+2019-07-19 11:13:45.777  INFO 16196 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.deng.bean.User(true)
+2019-07-19 11:13:45.795  INFO 16196 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.util.List<com.deng.bean.User>(true)
+2019-07-19 11:13:45.795  INFO 16196 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.util.List<com.deng.bean.User>(true)
+2019-07-19 11:13:45.796  INFO 16196 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.deng.bean.User(true)
+2019-07-19 11:13:45.796  INFO 16196 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.deng.bean.User(true)
+2019-07-19 11:13:45.798  INFO 16196 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/user/userAll.com.deng.web.UserRestController.findByUserAge.DefaultGenericTypeNamingStrategy
+2019-07-19 11:13:45.798  INFO 16196 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/user/userAll.com.deng.web.UserRestController.findByUserAge.DefaultGenericTypeNamingStrategy
+2019-07-19 11:13:45.799  INFO 16196 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method findByUserAge was userservice|一个用来测试的控制器
+2019-07-19 11:13:45.799  INFO 16196 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method findByUserAge was userservice|一个用来测试的控制器
+2019-07-19 11:13:45.800  INFO 16196 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.deng.bean.User(true)
+2019-07-19 11:13:45.801  INFO 16196 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.deng.bean.User(true)
+2019-07-19 11:13:45.801  INFO 16196 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.deng.bean.User(true)
+2019-07-19 11:13:45.801  INFO 16196 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.deng.bean.User(true)
+2019-07-19 11:13:45.801  INFO 16196 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.deng.bean.User(true)
+2019-07-19 11:13:45.801  INFO 16196 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.deng.bean.User(true)
+2019-07-19 11:13:45.801  INFO 16196 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.deng.bean.User(true)
+2019-07-19 11:13:45.801  INFO 16196 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.deng.bean.User(true)
+2019-07-19 11:13:45.801  INFO 16196 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/user/user.com.deng.web.UserRestController.findByUserName.DefaultGenericTypeNamingStrategy
+2019-07-19 11:13:45.801  INFO 16196 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/user/user.com.deng.web.UserRestController.findByUserName.DefaultGenericTypeNamingStrategy
+2019-07-19 11:13:45.803  INFO 16196 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method findByUserName was userservice|一个用来测试的控制器
+2019-07-19 11:13:45.803  INFO 16196 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method findByUserName was userservice|一个用来测试的控制器
+2019-07-19 11:13:45.804  INFO 16196 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: boolean(true)
+2019-07-19 11:13:45.804  INFO 16196 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key boolean(true)
+2019-07-19 11:13:45.804  INFO 16196 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: boolean(true)
+2019-07-19 11:13:45.805  INFO 16196 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key boolean(true)
+2019-07-19 11:13:45.805  INFO 16196 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/user/login.com.deng.web.UserRestController.login.DefaultGenericTypeNamingStrategy
+2019-07-19 11:13:45.805  INFO 16196 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/user/login.com.deng.web.UserRestController.login.DefaultGenericTypeNamingStrategy
+2019-07-19 11:13:45.807  INFO 16196 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was userservice|一个用来测试的控制器
+2019-07-19 11:13:45.808  INFO 16196 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was userservice|一个用来测试的控制器
+2019-07-19 11:13:45.810  INFO 16196 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: boolean(true)
+2019-07-19 11:13:45.810  INFO 16196 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key boolean(true)
+2019-07-19 11:13:45.810  INFO 16196 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: boolean(true)
+2019-07-19 11:13:45.810  INFO 16196 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key boolean(true)
+2019-07-19 11:13:45.811  INFO 16196 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/user/user.com.deng.web.UserRestController.updateUser.DefaultGenericTypeNamingStrategy
+2019-07-19 11:13:45.811  INFO 16196 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/user/user.com.deng.web.UserRestController.updateUser.DefaultGenericTypeNamingStrategy
+2019-07-19 11:13:45.812  INFO 16196 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateUser was userservice|一个用来测试的控制器
+2019-07-19 11:13:45.812  INFO 16196 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateUser was userservice|一个用来测试的控制器
+2019-07-19 11:13:45.842  INFO 16196 --- [main] com.deng.SpringbootApplicationTests      : Started SpringbootApplicationTests in 5.881 seconds (JVM running for 6.673)
+2019-07-19 11:13:45.877  INFO 16196 --- [main] com.deng.SpringbootApplicationTests      : 这是info日志
+2019-07-19 11:13:45.892  INFO 16196 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1abf3bf: startup date [Fri Jul 19 11:13:40 CST 2019]; root of context hierarchy
+2019-07-19 11:13:45.899  INFO 16196 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
